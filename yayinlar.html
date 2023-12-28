@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurgu Kütüphanesi</title>
+    <link rel="stylesheet" href="css/yayinlar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<script>
+    $(document).ready(function(){
+        $('.slider').slick();
+
+        $('.menu-toggle').click(function(){
+        $('nav ul').slideToggle();
+        $('.prev-arrow, .next-arrow').toggleClass('menu-open');
+        });
+
+        $('.prev-arrow').click(function(){
+            $('.slider').slick('slickPrev');
+        });
+
+        $('.next-arrow').click(function(){
+            $('.slider').slick('slickNext');
+        });
+
+    });
+</script>
+
+
+<body>
+        <header>
+            <div class="header-content">
+                <div class="header-left">
+                    <h1>KURGU KÜTÜPHANESİ</h1>
+                </div>
+                <div class="header-right">
+                    <img src="img/logo.png">
+                </div>
+            </div>
+            <div class="menu-toggle">&#9776; Menu</div>
+                <nav>
+                    <div class="menu-container">
+                        <ul>
+                            <li><a href="index.html">Hakkımızda</a></li>
+                            <li><a href="koleksiyon.html">Koleksiyon</a></li>
+                            <li><a href="yayinlar.html">Yayınlar</a></li>
+                            <li><a href="hizmetlerimiz.html">Hizmetlerimiz</a></li>
+                            <li><a href="duyuru.html">Haber/Duyuru</a></li>
+                            <li><a href="iletisim.html">İletişim</a></li>
+                            <li><a href="login.html">Giriş Yap  <i class="fas fa-sign-in-alt"></i></a></li>
+                        </ul>
+                    </div>
+                </nav>
+        </header>
+        <br>
+        <main>
+            <div class="prev-arrow"><span>&#10094;</span></div>
+            <div class="next-arrow"><span>&#10095;</span></div>
+            <div class="slider">
+                <div><img src="img/slider1.png" alt="Slider Image 1"></div>
+                <div><img src="img/slider2.png" alt="Slider Image 2"></div>
+                <div><img src="img/slider3.png" alt="Slider Image 3"></div>
+            </div>
+        </main>
+        <div id="main-content">
+            <div class="kapakfotograflari"><img src="img/kapak1.png"/><p>Merve Avcı<br>Astroloji Yolculuğu</p></div>
+            <div class="kapakfotograflari"><img src="img/kapak1.png"/><p>Merve Avcı<br>Astroloji Yolculuğu</p></div>
+            <div class="kapakfotograflari"><img src="img/kapak1.png"/><p>Merve Avcı<br>Astroloji Yolculuğu</p></div>
+            <div class="kapakfotograflari"><img src="img/kapak2.png"/><p>Harun Dürüst<br>Eski Günler</p></div>
+            <div class="kapakfotograflari"><img src="img/kapak2.png"/><p>Harun Dürüst<br>Eski Günler</p></div>
+            <div class="kapakfotograflari"><img src="img/kapak2.png"/><p>Harun Dürüst<br>Eski Günler</p></div>
+            <div class="kapakfotograflari"><img src="img/kapak1.png"/><p>Merve Avcı<br>Astroloji Yolculuğu</p></div>
+            <div class="kapakfotograflari"><img src="img/kapak1.png"/><p>Merve Avcı<br>Astroloji Yolculuğu</p></div>
+            <div class="kapakfotograflari"><img src="img/kapak1.png"/><p>Merve Avcı<br>Astroloji Yolculuğu</p></div>
+            <div class="kapakfotograflari"><img src="img/kapak2.png"/><p>Harun Dürüst<br>Eski Günler</p></div>
+            <div class="kapakfotograflari"><img src="img/kapak2.png"/><p>Harun Dürüst<br>Eski Günler</p></div>
+            <div class="kapakfotograflari"><img src="img/kapak2.png"/><p>Harun Dürüst<br>Eski Günler</p></div>
+        </div>
+        <footer>
+            <div id="footercontent">
+                <div class="footer-left">
+                    <h3>İletişim Bilgileri</h3>
+                    <p>Adres: Namık Kemal Kampüs Cad No:1, 59030 Süleymanpaşa/Tekirdağ</p>
+                    <p>Telefon: 0531 630 92 76</p>
+                    <p>E-posta: 1224225029@nku.edu.tr</p>
+                </div>
+                <div class="footer-right">
+                    <h3>Sosyal Medya</h3>
+                    <a href="#">Facebook  <i class="fa fa-facebook"></i></a><br>
+                    <a href="#">X  <i class="fa fa-x"></i></a><br>
+                    <a href="#">Instagram  <i class="fa fa-instagram"></i></a>
+                </div>
+            </div>
+        </footer>
+
+</body>
+</html>
