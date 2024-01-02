@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800&display=swap');
 
-*{
+*
+{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Mulish', sans-serif;
 }
 
-body{
+body
+{
     height: 100vh;
     display: flex;
     align-items: center;
@@ -16,7 +18,8 @@ body{
 }
 
 
-.container{
+.container
+{
     width: 440px;
     padding: 40px 32px;
     border-radius: 8px;
@@ -27,7 +30,8 @@ body{
     font-size: 1.6rem;
 }
 
-.container .divider .line{
+.container .divider .line
+{
     height: 1px;
     width: 100%;
     background: #1d1d1d;
@@ -35,7 +39,8 @@ body{
     margin: 30px 0 16px;
 }
 
-.container form label{
+.container form label
+{
     color: #1d1d1d;
     font-size: 14px;
     font-weight: bold;
@@ -44,11 +49,13 @@ body{
     margin-top: 12px;
 }
 
-.container form .custome-input{
+.container form .custome-input
+{
     position: relative;
 }
 
-.container form .custome-input input{
+.container form .custome-input input
+{
     color: #1d1d1d;
     font-size: 16px;
     font-weight: 500;
@@ -64,11 +71,13 @@ body{
     transition: all 0.3s ease;
 }
 
-.container form .custome-input input:focus{
+.container form .custome-input input:focus
+{
     border-color: #5222fd;
 }
 
-.container form .custome-input i{
+.container form .custome-input i
+{
     position: absolute;
     font-size: 28px;
     right: 10px;
@@ -76,11 +85,13 @@ body{
     transition: all 0.3s ease;
 }
 
-.container form .custome-input input:focus + i{
+.container form .custome-input input:focus + i
+{
     color: #5222fd;
 }
 
-.container form .login{
+.container form .login
+{
     width: 100%;
     margin-top: 30px;
     background: black;
@@ -96,7 +107,8 @@ body{
     transition: all 0.3s ease;
 }
 
-.container form .login:hover{
+.container form .login:hover
+{
     background: white;
     color: black;
 
