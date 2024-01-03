@@ -124,9 +124,104 @@ nav a {
     margin: 0 auto;
     height: auto;
     margin-bottom: 20px;
+    margin-top: 30px;
 }
 
+#duyurular
+{
+    width: 350px;
+    height: 800px;
+    background-color: green;
+    overflow-y: auto;
+    float: left;
+    display: grid;
+    background-color: aliceblue;
+}
 
+.duyuru
+{
+    height: 200px;
+    background-color: orange;
+    display: flex;
+    align-items: center;
+    background-color: rgb(230, 228, 228);
+}
+
+.duyuru img
+{
+    width: 100px;
+}
+.duyuru h3 a
+{
+    color:black;
+
+}
+
+#duyuruilk
+{
+    padding: 20px;
+    width: 800px;
+    height: 800px;
+    overflow-y: hidden;
+    background-color: aliceblue;
+    float: right;
+}
+
+#duyuru1
+{
+    padding: 20px;
+    width: 800px;
+    height: 800px;
+    overflow-y: hidden;
+    background-color: aliceblue;
+    float: right;
+}
+
+#duyuru2
+{
+    padding: 20px;
+    width: 800px;
+    height: 800px;
+    overflow-y: hidden;
+    background-color: aliceblue;
+    float: right;
+}
+
+#duyuru3
+{
+    padding: 20px;
+    width: 800px;
+    height: 800px;
+    overflow-y: hidden;
+    background-color: aliceblue;
+    float: right;
+}
+
+#main-content h2
+{
+    text-align: center;
+}
+
+#main-content p
+{
+    text-align: justify;
+}
+
+#main-content ul
+{
+    padding: 0px;
+}
+
+#main-content ul li
+{
+    list-style-type: none;
+    font-weight: bold;
+}
+
+.hidden
+{
+    display: none;
+}
 footer 
 {
     width: 100%;

@@ -70,10 +70,10 @@
             </div>
         </main>
         <div id="main-content">
-            <div class="main-content-div"><div class="flex"><img src="img/uyelik.png"></div><a href="#">Üye Girişi</a></div>
-            <div class="main-content-div"><div class="flex"><img src="img/kural.png"></div><a href="#">Kütüphane Kuralları</a></div>
-            <div class="main-content-div"><div class="flex"><img src="img/eseristek.png"></div><a href="#">Eser İstek</a></div>
-            <div class="main-content-div"><div class="flex"><img src="img/calismasaatleri.png"></div><a href="#">Çalışma Saatleri</a></div>
+            <div class="main-content-div"><div class="flex"><img src="img/uyelik.png"></div><a href="login.html">Üye Girişi</a></div>
+            <div class="main-content-div"><div class="flex"><img src="img/kural.png"></div><a href="#" id="kutuAcLink0" class="sabit">Kütüphane Kuralları</a></div>
+            <div class="main-content-div"><div class="flex"><img src="img/eseristek.png"></div><a>Ücretsiz İnternet</a></div>
+            <div class="main-content-div"><div class="flex"><img src="img/calismasaatleri.png"></div><a href="#" id="kutuAcLink2" class="sabit">Çalışma Saatleri</a></div>
         </div>
         <footer>
             <div id="footercontent">
@@ -90,7 +90,64 @@
                     <a href="#">Instagram  <i class="fa fa-instagram"></i></a>
                 </div>
             </div>
+            
         </footer>
+        <div id="kutu0" class="kutu">
+            <span class="kapat" onclick="kutuKapat()">&times;</span>
+            <h3>Kütüphane kullanımında uyulması gereken genel kurallar;</h3>
+            <ul>
+                <li>Kütüphane binası, okuma salonları ve koridorlarda su hariç yiyecek ve içecek tüketilmez.</li>
+                <li>Kütüphane binası içersinde cep telefonuyla konuşulmaz.</li>
+                <li>Kütüphane içerisinde izinsiz kamera, fotoğraf makinesi, cep telefonu ve benzeri araçlarla çekim yapılmaz.</li>
+                <li>Kullanıcılar, kendi eşyalarından sorumludur. Kaybolan ya da çalınan eşyalardan Kütüphane ve Dokümantasyon Daire Başkanlığı sorumlu değildir</li>
+                <li>Okuyucu salonlarında ve koridorlarda yüksek sesle konuşulmaz.</li>
+                <li>Kütüphane kapanmadan on beş dakika önce, ödünç alma ve iade işlemleri tamamlanır.</li>
+                <li>Kütüphanedeki bilgisayarlar, sadece eğitim-öğretim ve araştırmaya yönelik amaçlar için kullanılır.</li>
+                <li>Kütüphane kurallarına uyulmaması durumunda kullanıcı, kütüphane personelinin uyarılarını dikkate almakla yükümlüdür.</li>
+                <li>Kütüphane bilgi kaynaklarına ve eşyalarına (bilgisayar, sandalye, masa v.b.) zarar veren kullanıcı hakkında gerekli yasal işlem yapılmak üzere Rektörlük Makamına bildirilir.</li>
+                <li>Bilgi kaynaklarının, izinsiz olarak kütüphane dışına çıkartılması ya da çıkartılmaya teşebbüs edilmesi durumunda, bu eylemde bulunan kullanıcı hakkında gerekli yasal işlem yapılmak üzere Rektörlük Makamına bildirilir.</li>
+                <li>Üyeler, ilk kullanımda kütüphane kayıt formunda yer alan bilgilerdeki değişiklikleri, zamanında kütüphaneye bildirmekle yükümlüdürler.</li>
+            </ul>
+        </div>
+        <div id="kutu2" class="kutu">
+            <span class="kapat" onclick="kutuKapat()">&times;</span>
+            <h3>KÜTÜPHANE ÇALIŞMA SAATLERİ</h3>
+            <ul>
+                <li>Eğitim ve öğretim döneminde kütüphanemiz 09:00-17:00 saatleri arasında açık olacaktır. </li>
+                <li>Kütüphanemizde öğrencilerimizin kullanımı için kablosuz internet bağlantısı bulunmaktadır. </li>
+                <li>Öğrencilerimiz kendi kullanıcı adresleri ve şifreleri ile ağa bağlanabilirler.</li>
+            </ul>
+        </div>
 
 </body>
+<script>
+    document.getElementById('kutuAcLink0').addEventListener('click', function() 
+    {
+    document.getElementById('kutu0').style.display = 'block';
+    });
+
+    document.getElementById('kutuAcLink2').addEventListener('click', function() 
+    {
+    document.getElementById('kutu2').style.display = 'block';
+    });
+
+
+    function kutuKapat() 
+    {
+        var kutuElemanlari = document.getElementsByClassName('kutu');
+
+        for (var i = 0; i < kutuElemanlari.length; i++) 
+        {
+            kutuElemanlari[i].style.display = 'none';
+        }
+    }
+    var links = document.getElementsByClassName("sabit");
+
+        for (var i = 0; i < links.length; i++) {
+            links[i].addEventListener("click", function(event) {
+                
+                event.preventDefault();
+            });
+        }
+</script>
 </html>

@@ -253,14 +253,8 @@
 
         for (var i = 0; i < links.length; i++) {
             links[i].addEventListener("click", function(event) {
-                // Sayfanın en başına çıkmaması için varsayılan davranışı engelle
-                event.preventDefault();
                 
-                // Buraya etiketin tıklandığında yapılmasını istediğiniz işlemleri ekleyebilirsiniz
-
-                // Örneğin, sayfanın içeriğinde bir değişiklik yapabilir veya başka bir işlem gerçekleştirebilirsiniz.
-                // Bu örnekte, sadece konsola bir mesaj yazdırıyoruz.
-                console.log("Etikete tıklandı, sayfa değişiklik yapmadan kaldı.");
+                event.preventDefault();
             });
         }
 </script>
